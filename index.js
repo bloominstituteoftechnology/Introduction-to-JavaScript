@@ -20,7 +20,10 @@ Do the following:
    HINT: no function required
 */
 
-
+const votingAge = 18;
+if(votingAge >= 18){
+  console.log(true);
+}
 
 /*
 Task 1b - Values (not auto tested)
@@ -34,9 +37,12 @@ Do the following:
    HINT: no function required
 */
 
-
-
-
+let firstThing  = 10;
+let secondThing = 10;
+if(firstThing === secondThing){
+  firstThing = 30;
+}
+console.log(firstThing);
 
 /*
 Task 1c - Convert Strings to Numbers (not auto tested)
@@ -49,6 +55,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+const string = "1999";
+let number = Number(string);
+console.log(number);
 
 
 
@@ -77,8 +86,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
 
 
