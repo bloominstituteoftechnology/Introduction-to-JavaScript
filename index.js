@@ -48,7 +48,7 @@ console.log(firstThing);
 Task 1c - Convert Strings to Numbers (not auto tested)
 
 Do the following:   
-   1. Declare a variable with the string type value of "1999"
+   1. Declare a variable with the string type value of "1999"    
    2. Convert the string value of "1999" to a integer value of 1999
    3. Console log the result
 
@@ -58,7 +58,6 @@ Do the following:
 const string = "1999";
 let number = Number(string);
 console.log(number);
-
 
 
 /*
@@ -73,7 +72,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
-
+console.log(multiply(2, 3));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -89,6 +88,7 @@ Do the following:
 function dogYears(age){
   return age * 7;
 }
+console.log(dogYears(15));
 
 
 
