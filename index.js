@@ -15,10 +15,19 @@ Task 1a - Voting Age (not auto tested)
 
 Do the following:   
    1. Create a variable called votingAge and assign it a number value
+  
    2. Console log true if age is 18 or higher
 
    HINT: no function required
-*/
+*/ 
+let votingAge = 18
+if (votingAge >= 18) {
+console.log ("true")
+
+} else {
+console.log ("false")
+}
+
 
 
 
@@ -33,9 +42,13 @@ Do the following:
 
    HINT: no function required
 */
+let firstThing = 2
+let secondThing = 4
+if (firstThing > secondThing) {
+  console.log ('true')
+}
 
-
-
+console.log (firstThing)
 
 
 /*
@@ -49,8 +62,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+const year = "1999"
+const numYear = Number(year)
+console.log (numYear)
 
 /*
 Task 1d - Multiply
@@ -64,8 +78,10 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
-
-
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+console.log(numYear)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -77,10 +93,13 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
-}
 
+function dogYears(age) {
+
+} return age * 7
+
+
+console.log(dogYears(10))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -128,10 +147,28 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
-
-function hungryDog(/*add your code here*/){
+function hungryDog(weight,age){}
   /*add your code here*/
-}
+
+  if age<=.33{
+    return weight *.10}
+    else if (age<=.58){
+      return weight * .05
+    } else {
+      return weight *.04
+    }
+   else if (weight <=5){
+      return weight *.05
+    } else if (weight <=10) {
+      return weight *.04
+
+    } else if (weight <=15) {
+      return weight *.03
+    } else {
+      return weight *.02
+    }
+  }
+
 
 
 
@@ -156,10 +193,26 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
+let cp =Math.cell(Math.random() * 3)
+if (cp ===1) {
+  cp ='rock';
+} else if(cp === 2) {
+  cp ='paper'
+} else {
+  cp = 'scissors'
+}
+
 function game(user, computer){
   /*add your code here*/
 }
-
+let cp =Math.cell(Math.random() * 3)
+if (cp ===1) {
+  cp ='rock';
+} else if(cp === 2) {
+  cp ='paper'
+} else {
+  cp = 'scissors'
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -167,17 +220,21 @@ function game(user, computer){
 //Metric Converter 
 //Task 5a - Kilometers to Miles 
 /*
+
 Using the miles function below do the following:
 1. Receive a number of kilometers
 2. Convert the number of kiolmeters received to miles
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+
+  
+
+function miles(kilometers){
+  return (kilometers * .621371)
 }
 
-
+console.log (miles(3))
 
 //Task 5b - Centimeters to Feet
 /*
@@ -189,8 +246,11 @@ Using the feet function below do the following:
 
 function feet(/*add your code here*/){
   /*add your code here*/
-}
 
+
+  
+}
+console.log(feet(156))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -210,7 +270,10 @@ Using the annoyingSong function below do the following:
 function annoyingSong(/*add your code here*/){
       /*add your code here*/
 }
+// x = x+1
 
+return `${x} bottles of soda on the wall, ${x} bottles of soda, take one down pass it around ${x-1} bottles of soda on the wall`
+// console.log (annoyingSong(i))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -229,9 +292,20 @@ Using the grade function below do the following:
 
 function grade(/*Your Code here */){
 /*Your Code here */
+function greate(grade){
+  if (grade >=90) {
+
+    return "you got an B"
+  } else if (grade >= 70) {
+    return 'you got an C'
+  } else if (grade >=60) {
+    return ' you got an D'
+  } else if (grade >=50) {
+    return 'you got an F'
+} 
 }
 
-
+console.log(grade(85))
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -270,3 +344,4 @@ module.exports = {
   annoyingSong,
   grade
 }
+
