@@ -186,8 +186,7 @@ function hungryDog(weight, age){
     "Lbs of food per day=", DFA);
   }
 }
-hungryDog(Math.ceil(Math.random()*10),(Math.random()*10)); 
-
+hungryDog(4,1);
 
 
 
@@ -226,17 +225,17 @@ if (cInput===0){
 }
 function game(pInput,cInput){
   if (pInput==="rock" && cInput==="scissors" || pInput==="scissors" && cInput==="paper" || pInput==="paper" && cInput==="rock"){
-    console.log("task 4= you win!");
+    console.log("you win!");
     return;
   }else if (cInput===pInput){
-    console.log("task 4= its a tie");
+    console.log("its a tie");
     return;
   }else {
-    console.log("task 4= you lose!");
+    console.log("you lose!");
     return;
   }
 }
-game("scissors",cInput);
+game('rock','scissors');
 
 
 
@@ -271,7 +270,7 @@ function feet(cm){
   console.log('task 5b= '+cm*0.028084);
   return;
 }
-feet(Math.ceil(Math.random()*10));
+feet(30.48);
 
 
 
@@ -315,23 +314,18 @@ Using the grade function below do the following:
 
 function grade(gradeNumber){
   if (gradeNumber>89){
-    console.log('task 7= ', gradeNumber, "You got an A!");
-    return;
+    return 'you got an A';
   } else if (gradeNumber>79){
-    console.log('task 7= ', gradeNumber, "You got a B!");
-    return;
+    return 'you got a B';
   } else if (gradeNumber>69){
-    console.log('task 7= ', gradeNumber, "You got a C!");
-    return;
+    return 'you got a C';
   } else if (gradeNumber>59){
-    console.log('task 7= ', gradeNumber, "You got a D!");
-    return;
+    return 'you got a D';
   } else {
-    console.log('task 7= ', gradeNumber, "You got a F!");
-    return;
+    return 'you got an F';
   }
 }
-  grade(Math.floor(Math.random()*100));
+  grade(20);
 
 
 
